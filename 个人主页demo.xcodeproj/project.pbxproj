@@ -191,14 +191,14 @@
 		5C7CF60421A64B8C0042B30C /* YWPerson */ = {
 			isa = PBXGroup;
 			children = (
-				5CC746D8219C2D9A005ACA16 /* SegmentViewController.h */,
-				5CC746D9219C2D9A005ACA16 /* SegmentViewController.m */,
-				5CF0C4E921A52FD800584C7F /* YWPageHeadView.h */,
-				5CF0C4E821A52FD800584C7F /* YWPageHeadView.m */,
-				5CC746CF219C2255005ACA16 /* SegmentView.h */,
-				5CC746D0219C2255005ACA16 /* SegmentView.m */,
 				5CC746C9219C18A2005ACA16 /* CenterTouchTableView.h */,
 				5CC746CA219C18A2005ACA16 /* CenterTouchTableView.m */,
+				5CC746CF219C2255005ACA16 /* SegmentView.h */,
+				5CC746D0219C2255005ACA16 /* SegmentView.m */,
+				5CF0C4E921A52FD800584C7F /* YWPageHeadView.h */,
+				5CF0C4E821A52FD800584C7F /* YWPageHeadView.m */,
+				5CC746D8219C2D9A005ACA16 /* SegmentViewController.h */,
+				5CC746D9219C2D9A005ACA16 /* SegmentViewController.m */,
 				5CC746CC219C223B005ACA16 /* HMSegmentedControl.h */,
 				5CC746CD219C223B005ACA16 /* HMSegmentedControl.m */,
 				5CE5AE6E219EB94400D8BF97 /* UIView+Extension.h */,
