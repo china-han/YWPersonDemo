@@ -6,14 +6,17 @@
 
 #### 视图显示
 
-* 整体效果                                                                  
+* 整体效果  
+
 ![image](https://github.com/china-han/YWPersonDemo/blob/master/image/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.gif) 
 
 
-* 下部分滑动切换效果 及导航栏渐变效果                                                                
+* 下部分滑动切换效果 及导航栏渐变效果  
+
 ![image](https://github.com/china-han/YWPersonDemo/blob/master/image/person1.gif) 
 
-* 轮播器滑动效果，允许上下滑动整体页面滑动 左右滑动轮播滑动                                                               
+* 轮播器滑动效果，允许上下滑动整体页面滑动 左右滑动轮播滑动   
+
 ![image](https://github.com/china-han/YWPersonDemo/blob/master/image/person1.gif) 
 
 
