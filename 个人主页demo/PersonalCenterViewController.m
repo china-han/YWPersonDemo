@@ -7,6 +7,7 @@
 //
 
 #import "PersonalCenterViewController.h"
+
 #import "CenterTouchTableView.h"
 #import "SegmentView.h"
 
@@ -123,12 +124,12 @@
     [self.mainTableView addSubview:self.tabHeadView];
 
     
-     self.pageHeadView.parentScrollView = self.mainTableView;
-    self.pageHeadView.chidlScrollView = self.imageScrollView.scrollView;
+     self.pageHeadView.parentScrollView = self.mainTableView;  //这个必须设置
+     self.pageHeadView.chidlScrollView = self.imageScrollView.scrollView; //这个必须设置
 
     
      [self.mainTableView addSubview:self.pageHeadView];
-    [self.pageHeadView addSubview:self.imageScrollView];
+     [self.pageHeadView addSubview:self.imageScrollView];
      [self.view addSubview:self.naviView];
 
     
@@ -336,7 +337,7 @@
     {
 
         _imageScrollView = [[CCPagedScrollView alloc] initWithFrame:CGRectMake(0, 0,kScreenWidth, self.HeaderImageViewHeight) animationDuration:0 isAuto:NO];
-        _imageScrollView.parentView = self.view;
+      
         NSArray *imagesURLStrings = @[
                                       @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
                                       @"https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg",
@@ -359,6 +360,7 @@
 -(YWPageHeadView *)pageHeadView{
     if (!_pageHeadView) {
         _pageHeadView = [[YWPageHeadView alloc]init];
+        _pageHeadView.parentView = self.view;  //这个必须设置
         _pageHeadView.frame = CGRectMake(0, -self.offHeight,kScreenWidth, self.HeaderImageViewHeight);
     }
     return _pageHeadView;
