@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  PersonalCenter
+//
+//  Created by 赛驰 on 2017/9/15.
+//  Copyright © 2017年 mint_bin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//#import <Masonry.h>
+//#import "MBProgressHUD.h"
+//#import "MBProgressHUD+NHAdd.h"
+//#import <MJRefresh/MJRefresh.h>
+//#import "BaseViewController.h"
+
+/** notificationName */
+#define IsEnablePersonalCenterVCMainTableViewScroll @"IsEnablePersonalCenterVCMainTableViewScroll"
+//#define CurrentSelectedChildViewControllerIndex @"CurrentSelectedChildViewControllerIndex"
+#define PersonalCenterVCBackingStatus @"PersonalCenterVCBackingStatus"
+#define SegementViewChildVCBackToTop @"segementViewChildVCBackToTop"
+
+
+/********** 屏幕宽高 **********/
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenBounds [UIScreen mainScreen].bounds
+
+/********** 状态栏高度 **********/
+#define NAVIGATIONBARHEIGHT  [[UIApplication sharedApplication] statusBarFrame].size.height
+/********** 导航栏高度 **********/
+#define STATUSBARHEIGHT    44
+/********** 导航栏+状态栏高度 **********/
+#define NAVHEIGHT       (NAVIGATIONBARHEIGHT+STATUSBARHEIGHT)
+
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//宽高比适配
+#define AutoSize(px) ((kScreenHeight > kScreenWidth) ? ([UIScreen mainScreen].bounds.size.width/667)*(px) : ([UIScreen mainScreen].bounds.size.height/667)*(px))
+
+#define SegmentHeaderViewHeight  41 //标题栏高度
+
+#define kRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+
+
+
+#import "UIView+Extension.h"
+
+#import "UIImageView+WebCache.h"
+
+#endif /* PrefixHeader_pch */
