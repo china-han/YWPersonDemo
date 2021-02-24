@@ -127,11 +127,9 @@
      self.pageHeadView.parentScrollView = self.mainTableView;  //这个必须设置
      self.pageHeadView.chidlScrollView = self.imageScrollView.scrollView; //这个必须设置
 
-    
      [self.mainTableView addSubview:self.pageHeadView];
      [self.pageHeadView addSubview:self.imageScrollView];
      [self.view addSubview:self.naviView];
-
     
 }
 
